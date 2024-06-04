@@ -1,4 +1,4 @@
-import { Container, Text, VStack, Box, Heading, Button, Image, SimpleGrid, Card, CardBody, CardFooter } from "@chakra-ui/react";
+import { Container, Text, VStack, Box, Heading, Image, SimpleGrid, Card, CardBody, CardFooter, Link } from "@chakra-ui/react";
 
 const Index = () => {
   return (
@@ -7,45 +7,49 @@ const Index = () => {
         <Heading as="h1" size="2xl" mb={4}>Welcome to Travel Booking</Heading>
         <Text fontSize="lg" textAlign="center">Discover and book amazing travel experiences around the world.</Text>
         <Box boxSize="sm" mt={6}>
-          <Image src="/images/travel.jpg" alt="Travel" borderRadius="md" />
+          <Image src="/images/simple-travel.jpg" alt="Travel" borderRadius="md" />
         </Box>
-        <Button colorScheme="teal" size="lg" mt={6}>Start Your Journey</Button>
+        <Text fontSize="lg" mt={6} color="brand.800" as={Link} href="#">Start Your Journey</Text>
         <Heading as="h2" size="xl" mt={10}>Travel Alternatives</Heading>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} mt={6}>
           <Card>
             <CardBody>
-              <Heading size="md">Guided Trip</Heading>
+              <Image src="/images/guided-trip.jpg" alt="Guided Trip" borderRadius="md" />
+              <Heading size="md" mt={4}>Guided Trip</Heading>
               <Text mt={4}>Explore the city with an experienced guide. Prices start from $100.</Text>
             </CardBody>
             <CardFooter>
-              <Button colorScheme="teal">Book Now</Button>
+              <Text fontSize="lg" color="brand.800" as={Link} href="#">Read More</Text>
             </CardFooter>
           </Card>
           <Card>
             <CardBody>
-              <Heading size="md">Hotel Deals</Heading>
+              <Image src="/images/hotel-deals.jpg" alt="Hotel Deals" borderRadius="md" />
+              <Heading size="md" mt={4}>Hotel Deals</Heading>
               <Text mt={4}>Stay at the best hotels with exclusive deals. Prices start from $150 per night.</Text>
             </CardBody>
             <CardFooter>
-              <Button colorScheme="teal">Book Now</Button>
+              <Text fontSize="lg" color="brand.800" as={Link} href="#">Read More</Text>
             </CardFooter>
           </Card>
           <Card>
             <CardBody>
-              <Heading size="md">Adventure Tours</Heading>
+              <Image src="/images/adventure-tours.jpg" alt="Adventure Tours" borderRadius="md" />
+              <Heading size="md" mt={4}>Adventure Tours</Heading>
               <Text mt={4}>Join adventure tours for an exhilarating experience. Prices start from $200.</Text>
             </CardBody>
             <CardFooter>
-              <Button colorScheme="teal">Book Now</Button>
+              <Text fontSize="lg" color="brand.800" as={Link} href="#">Read More</Text>
             </CardFooter>
           </Card>
           <Card>
             <CardBody>
-              <Heading size="md">Luxury Packages</Heading>
+              <Image src="/images/luxury-packages.jpg" alt="Luxury Packages" borderRadius="md" />
+              <Heading size="md" mt={4}>Luxury Packages</Heading>
               <Text mt={4}>Indulge in luxury travel packages. Prices start from $500.</Text>
             </CardBody>
             <CardFooter>
-              <Button colorScheme="teal">Book Now</Button>
+              <Text fontSize="lg" color="brand.800" as={Link} href="#">Read More</Text>
             </CardFooter>
           </Card>
         </SimpleGrid>
